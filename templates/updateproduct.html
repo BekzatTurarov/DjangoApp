@@ -1,0 +1,7 @@
+<form method="POST">
+    {% csrf_token %}
+    <input placeholder="Name" value="{{product.name}}" type="text", name="name", id="name">
+    <input placeholder="Price" type="text", name="price", id="price" value="{{product.price}}">
+    <input placeholder="Description" type="text", name="desc", id="desc" value="{{product.desc}}">
+    <input type="submit" name ="Add product" value = "Add Product">
+</form>
